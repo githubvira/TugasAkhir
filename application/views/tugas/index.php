@@ -4,17 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
     <title>TUGAS AKHIR MBKM</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <!-- <link href="<?php echo base_url('/assets/tugas/'); ?>assets/img/favicon.png" rel="icon">
-    <link href="<?php echo base_url('/assets/tugas/'); ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet"> -->
 
     <!-- Vendor CSS Files -->
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -23,20 +18,7 @@
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/css/style.css" rel="stylesheet">
-    <!-- <style>
-        .login-btn {
-            color: red;
-        }
-    </style> -->
-    <!-- =======================================================
-  * Template Name: eBusiness - v4.9.1
-  * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -298,155 +280,6 @@
             </div>
         </div><!-- End Services Section -->
 
-        <!-- ======= Team Section ======= -->
-
-        <!-- <div id="team" class="our-team-area area-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="section-headline text-center">
-                            <h2>Our special Team</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/team/1.jpg" alt="">
-                                </a>
-                                <div class="team-social-icon text-center">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Jhon Mickel</h4>
-                                <p>Seo</p>
-                            </div>
-                        </div>
-                    </div> -->
-        <!-- End column -->
-        <!-- <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/team/2.jpg" alt="">
-                                </a>
-                                <div class="team-social-icon text-center">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Andrew Arnold</h4>
-                                <p>Web Developer</p>
-                            </div>
-                        </div>
-                    </div> -->
-        <!-- End column -->
-        <!-- <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/team/3.jpg" alt="">
-                                </a>
-                                <div class="team-social-icon text-center">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Lellien Linda</h4>
-                                <p>Web Design</p>
-                            </div>
-                        </div>
-                    </div> -->
-        <!-- End column -->
-        <!-- <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="single-team-member">
-                            <div class="team-img">
-                                <a href="#">
-                                    <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/team/4.jpg" alt="">
-                                </a>
-                                <div class="team-social-icon text-center">
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="bi bi-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-content text-center">
-                                <h4>Jhon Powel</h4>
-                                <p>Seo Expert</p>
-                            </div>
-                        </div>
-                    </div> -->
-        <!-- End column -->
-        <!-- </div>
-            </div>
-        </div> -->
-        <!-- End Team Section -->
-
         <!-- ======= Rviews Section ======= -->
         <div class="reviews-area">
             <div class="row g-0">
@@ -505,8 +338,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <!-- portfolio-item end -->
 
                     <!-- portfolio-item start -->
@@ -525,8 +356,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <!-- portfolio-item end -->
 
                     <!-- portfolio-item start -->
@@ -600,7 +429,6 @@
                         </div>
                     </div>
                     <!-- portfolio-item end -->
-
                 </div>
             </div>
         </div><!-- End Portfolio Section -->
@@ -668,206 +496,6 @@
                 </div>
             </div>
         </div><!-- End Pricing Section -->
-
-        <!-- ======= Testimonials Section ======= -->
-        <!-- <div id="testimonials" class="testimonials">
-            <div class="container">
-
-                <div class="testimonials-slider swiper">
-                    <div class="swiper-wrapper"> -->
-
-        <!-- <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div> -->
-        <!-- End testimonial item -->
-
-        <!-- <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div> -->
-        <!-- End testimonial item -->
-
-        <!-- <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div> -->
-        <!-- End testimonial item -->
-
-        <!-- <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div> -->
-        <!-- End testimonial item -->
-
-        <!-- <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div> -->
-        <!-- End testimonial item -->
-
-        <!-- </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </div>
-        </div> -->
-        <!-- End Testimonials Section -->
-
-        <!-- ======= Blog Section ======= -->
-        <!-- <div id="blog" class="blog-area">
-            <div class="blog-inner area-padding">
-                <div class="blog-overly"></div>
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="section-headline text-center">
-                                <h2>Latest News</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row"> -->
-        <!-- Start Left Blog -->
-        <!-- <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="single-blog">
-                                <div class="single-blog-img">
-                                    <a href="blog.html">
-                                        <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/blog/1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-meta">
-                                    <span class="comments-type">
-                                        <i class="fa fa-comment-o"></i>
-                                        <a href="#">13 comments</a>
-                                    </span>
-                                    <span class="date-type">
-                                        <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
-                                    </span>
-                                </div>
-                                <div class="blog-text">
-                                    <h4>
-                                        <a href="blog.html">Assumenda repud eum veniam</a>
-                                    </h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
-                                    </p>
-                                </div>
-                                <span>
-                                    <a href="blog.html" class="ready-btn">Read more</a>
-                                </span>
-                            </div> -->
-        <!-- Start single blog -->
-        <!-- </div> -->
-        <!-- End Left Blog-->
-        <!-- Start Left Blog -->
-        <!-- <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="single-blog">
-                                <div class="single-blog-img">
-                                    <a href="blog.html">
-                                        <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/blog/2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-meta">
-                                    <span class="comments-type">
-                                        <i class="fa fa-comment-o"></i>
-                                        <a href="#">130 comments</a>
-                                    </span>
-                                    <span class="date-type">
-                                        <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
-                                    </span>
-                                </div>
-                                <div class="blog-text">
-                                    <h4>
-                                        <a href="blog.html">Explicabo magnam quibusdam.</a>
-                                    </h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
-                                    </p>
-                                </div>
-                                <span>
-                                    <a href="blog.html" class="ready-btn">Read more</a>
-                                </span>
-                            </div> -->
-        <!-- Start single blog -->
-        <!-- </div> -->
-        <!-- End Left Blog-->
-        <!-- Start Right Blog-->
-        <!-- <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="single-blog">
-                                <div class="single-blog-img">
-                                    <a href="blog.html">
-                                        <img src="<?php echo base_url('/assets/tugas/'); ?>assets/img/blog/3.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="blog-meta">
-                                    <span class="comments-type">
-                                        <i class="fa fa-comment-o"></i>
-                                        <a href="#">10 comments</a>
-                                    </span>
-                                    <span class="date-type">
-                                        <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
-                                    </span>
-                                </div>
-                                <div class="blog-text">
-                                    <h4>
-                                        <a href="blog.html">Lorem ipsum dolor sit amet</a>
-                                    </h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.sit amet conse adipis elit Assumenda repud eum veniam optio modi sit explicabo nisi magnam quibusdam.
-                                    </p>
-                                </div>
-                                <span>
-                                    <a href="blog.html" class="ready-btn">Read more</a>
-                                </span>
-                            </div>
-                        </div> -->
-        <!-- End Right Blog-->
-        <!-- </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- End Blog Section -->
-
         <!-- ======= Suscribe Section ======= -->
         <div class="suscribe-area">
             <div class="container">
@@ -941,33 +569,6 @@
                             <!-- End Map -->
                         </div>
                         <!-- End Google Map -->
-
-                        <!-- Start  contact -->
-                        <!-- <div class="col-md-6">
-                            <div class="form contact-form">
-                                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                                    </div>
-                                    <div class="my-3">
-                                        <div class="loading">Loading</div>
-                                        <div class="error-message"></div>
-                                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                                    </div>
-                                    <div class="text-center"><button type="submit">Send Message</button></div>
-                                </form>
-                            </div>
-                        </div> -->
-                        <!-- End Left contact -->
                     </div>
                 </div>
             </div>
@@ -1055,8 +656,6 @@
     <script src="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
     <script src="<?php echo base_url('/assets/tugas/'); ?>assets/js/main.js"></script>
 
 </body>
