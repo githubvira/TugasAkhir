@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>TUGAS AKHIR MBKM</title>
+    <title>TUGAS AKHIR MSIB</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -37,15 +37,15 @@
         <div class="container d-flex justify-content-between">
 
             <div class="logo">
-                <h1><a href="index.php"><span>H</span>alwa</a></h1>
+                <h1><a href="<?php echo base_url("index.php/Home/index"); ?>"><span>H</span>alwa</a></h1>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" class="login-btn" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto active" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li>
+                    <li><a href="<?php echo base_url("index.php/Navbar/about"); ?>">About</a></li>
+                    <li><a href="<?php echo base_url("index.php/Navbar/service"); ?>">Services</a></li>
+                    <li><a href="<?php echo base_url("index.php/Navbar/portofolio"); ?>">Portofolio</a></li>
                     <li class="dropdown"><a href="#"><span>Catalogue</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a class="login-btn" href="<?php echo base_url("index.php/Catalog/index"); ?>">Birthday Cake</a></li>
