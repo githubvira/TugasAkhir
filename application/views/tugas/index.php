@@ -19,6 +19,7 @@
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         <div class="container d-flex justify-content-between">
 
             <div class="logo">
-                <h1><a href="index.php"><span>H</span>ome Cooking</a></h1>
+                <h1><a href="index.php"><span>H</span>alwa</a></h1>
             </div>
 
             <nav id="navbar" class="navbar">
@@ -39,9 +40,9 @@
                     <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
                     <li class="dropdown"><a href="#"><span>Catalogue</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="#">Birthday Cake</a></li>
-                            <li><a href="#">Brownies</a></li>
-                            <li><a href="#">Dessert</a></li>
+                            <li><a class="login-btn" href="<?php echo base_url("index.php/Catalog/index"); ?>">Birthday Cake</a></li>
+                            <li><a class="login-btn" href="<?php echo base_url("index.php/Catalog/brownies"); ?>">Brownies</a></li>
+                            <li><a class="login-btn" href="<?php echo base_url("index.php/Catalog/desert"); ?>">Dessert</a></li>
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -69,7 +70,7 @@
                     <div class="carousel-item active" style="background-image: url(<?php echo base_url(); ?>assets/carousel2.png)">
                         <div class="carousel-container">
                             <div class="container">
-                                <h2 class="animate__animated animate__fadeInDown">HOME COOKING </h2>
+                                <h2 class="animate__animated animate__fadeInDown">Halwa </h2>
                                 <p class="animate__animated animate__fadeInUp">Kami Menyediakan Berbagai Macam jenis Kue dan Dessert</p>
                                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Pesan</a>
                             </div>
@@ -79,7 +80,7 @@
                     <div class="carousel-item" style="background-image: url(<?php echo base_url(); ?>assets/carousel.png)">
                         <div class="carousel-container">
                             <div class="container">
-                                <h2 class="animate__animated animate__fadeInDown">HOME COOKING </h2>
+                                <h2 class="animate__animated animate__fadeInDown">Halwa </h2>
                                 <p class="animate__animated animate__fadeInUp">Kami Menyediakan Berbagai Macam jenis Kue</p>
                                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Pesan</a>
                             </div>
@@ -89,7 +90,7 @@
                     <div class="carousel-item" style="background-image: url(<?php echo base_url(); ?>assets/carousel3.png)">
                         <div class="carousel-container">
                             <div class="container">
-                                <h2 class="animate__animated animate__fadeInDown">HOME COOKING </h2>
+                                <h2 class="animate__animated animate__fadeInDown">Halwa </h2>
                                 <p class="animate__animated animate__fadeInUp">Kami Menyediakan Berbagai Macam jenis Kue</p>
                                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Pesan</a>
                             </div>
@@ -118,7 +119,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="section-headline text-center">
-                            <h2>About Home Cooking</h2>
+                            <h2>About Halwa</h2>
                         </div>
                     </div>
                 </div>
@@ -141,7 +142,7 @@
                                     <h4 class="sec-head">Our Business</h4>
                                 </a>
                                 <p>
-                                    Home Cooking mulai memanggang produk Confectionery di fasilitas bakery volume rendah. Kue-kue buatan tangan asli, kue, dan Dessert selalu menggunakan kualitas terbaik</p>
+                                    Halwa mulai memanggang produk Confectionery di fasilitas bakery volume rendah. Kue-kue buatan tangan asli, kue, dan Dessert selalu menggunakan kualitas terbaik</p>
                                 100% bahan sehat alami:
                                 <ul>
                                     <li>
@@ -289,7 +290,7 @@
                 <div class="col-lg-6 work-right-text d-flex align-items-center">
                     <div class="px-5 py-5 py-lg-0">
                         <h2>ingin Pesan Kue ?
-                            Di Home Cooking aja</h2>
+                            Di Halwa aja</h2>
 
                         <h5>BIRTHDAY CAKE, BROWNIES, DESSERT, DLL</h5>
                         <a href="#contact" class="ready-btn scrollto">Contact us</a>
@@ -502,7 +503,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
                         <div class="suscribe-text text-center">
-                            <h3>Welcome to Home Cooking</h3>
+                            <h3>Welcome to Halwa</h3>
                             <!-- <a class="sus-btn" href="#">Get A quote</a> -->
                         </div>
                     </div>
@@ -588,7 +589,7 @@
                                     <h2><span>H</span>ome Cooking</h2>
                                 </div>
 
-                                <p>Home Cooking adalah penyedia kualitas terkemuka untuk specialty bakery dan produk gula-gula dengan solusi katering profesional. Kami menyediakan dan mengirimkan produk ke individu, institusi, perusahaan, kafe, perusahaan katering serta rumah yang sesuai dengan kebutuhan dalam jumlah tak terbatas hingga kebutuhan pribadi sehari-hari.</p>
+                                <p>Halwa adalah penyedia kualitas terkemuka untuk specialty bakery dan produk gula-gula dengan solusi katering profesional. Kami menyediakan dan mengirimkan produk ke individu, institusi, perusahaan, kafe, perusahaan katering serta rumah yang sesuai dengan kebutuhan dalam jumlah tak terbatas hingga kebutuhan pribadi sehari-hari.</p>
                                 <div class="footer-icons">
                                     <ul>
                                         <li>
