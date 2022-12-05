@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>TUGAS AKHIR MBKM</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
 
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet"> -->
@@ -318,8 +316,8 @@
                                 <div class="single-icon">
                                     <i class="bi bi-envelope"></i>
                                     <p>
-                                        Email: homecooking@gmail.com<br>
-                                        <span>Web: www.homecooking.com</span>
+                                        Email: halwa@gmail.com<br>
+                                        <span>Web: www.halwa.com</span>
                                     </p>
                                 </div>
                             </div>
@@ -395,7 +393,7 @@
                                 </p> -->
                                 <div class="footer-contacts">
                                     <p><span>Telp:</span> +62 822 84xx xxxx</p>
-                                    <p><span>Email:</span> homecooking@gmail.com</p>
+                                    <p><span>Email:</span> halwa@gmail.com</p>
                                     <p><span>Jam Operasi:</span> Senin-Minggu (08.00-17.00)</p>
                                 </div>
                             </div>

@@ -294,12 +294,9 @@
                         <div class="footer-content">
                             <div class="footer-head">
                                 <h4>information</h4>
-                                <!-- <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                </p> -->
                                 <div class="footer-contacts">
                                     <p><span>Telp:</span> +62 822 84xx xxxx</p>
-                                    <p><span>Email:</span> homecooking@gmail.com</p>
+                                    <p><span>Email:</span> halwa@gmail.com</p>
                                     <p><span>Jam Operasi:</span> Senin-Minggu (08.00-17.00)</p>
                                 </div>
                             </div>

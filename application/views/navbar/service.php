@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>TUGAS AKHIR MSIB</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
 
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet"> -->
@@ -227,7 +225,6 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
                         <div class="suscribe-text text-center">
                             <h3>Welcome to Halwa</h3>
-                            <!-- <a class="sus-btn" href="#">Get A quote</a> -->
                         </div>
                     </div>
                 </div>
@@ -274,12 +271,9 @@
                         <div class="footer-content">
                             <div class="footer-head">
                                 <h4>information</h4>
-                                <!-- <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                </p> -->
                                 <div class="footer-contacts">
                                     <p><span>Telp:</span> +62 822 84xx xxxx</p>
-                                    <p><span>Email:</span> homecooking@gmail.com</p>
+                                    <p><span>Email:</span> halwa@gmail.com</p>
                                     <p><span>Jam Operasi:</span> Senin-Minggu (08.00-17.00)</p>
                                 </div>
                             </div>

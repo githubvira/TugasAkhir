@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>TUGAS AKHIR MSIB</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
 
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet"> -->
@@ -131,7 +129,6 @@
                             <h6 class="text-truncate mb-3">Strawberry Shortcake</h6>
                             <div class="d-flex justify-content-center">
                                 <h6>Rp 160.000,00</h6>
-                                <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -149,7 +146,6 @@
                             <h6 class="text-truncate mb-3">White Cake</h6>
                             <div class="d-flex justify-content-center">
                                 <h6>Rp 140.000,00</h6>
-                                <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -167,7 +163,6 @@
                             <h6 class="text-truncate mb-3">Pink Cake</h6>
                             <div class="d-flex justify-content-center">
                                 <h6>Rp 155.000,00</h6>
-                                <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -185,7 +180,6 @@
                             <h6 class="text-truncate mb-3">Butterfly Cake</h6>
                             <div class="d-flex justify-content-center">
                                 <h6>Rp 200.000,00</h6>
-                                <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -203,7 +197,6 @@
                             <h6 class="text-truncate mb-3">Rose Cake</h6>
                             <div class="d-flex justify-content-center">
                                 <h6>Rp 170.000,00</h6>
-                                <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -221,7 +214,6 @@
                             <h6 class="text-truncate mb-3">Red Velvet Cake</h6>
                             <div class="d-flex justify-content-center">
                                 <h6>Rp 210.000,00</h6>
-                                <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -239,7 +231,6 @@
                             <h6 class="text-truncate mb-3">Flower Cake</h6>
                             <div class="d-flex justify-content-center">
                                 <h6>Rp 250.000,00</h6>
-                                <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -257,7 +248,6 @@
                             <h6 class="text-truncate mb-3">Oreo Cake</h6>
                             <div class="d-flex justify-content-center">
                                 <h6>Rp 240.000,00</h6>
-                                <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -280,7 +270,6 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
                         <div class="suscribe-text text-center">
                             <h3>Welcome to Halwa</h3>
-                            <!-- <a class="sus-btn" href="#">Get A quote</a> -->
                         </div>
                     </div>
                 </div>
@@ -318,8 +307,8 @@
                                 <div class="single-icon">
                                     <i class="bi bi-envelope"></i>
                                     <p>
-                                        Email: homecooking@gmail.com<br>
-                                        <span>Web: www.homecooking.com</span>
+                                        Email: halwa@gmail.com<br>
+                                        <span>Web: www.halwa.com</span>
                                     </p>
                                 </div>
                             </div>
@@ -390,12 +379,9 @@
                         <div class="footer-content">
                             <div class="footer-head">
                                 <h4>information</h4>
-                                <!-- <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                </p> -->
                                 <div class="footer-contacts">
                                     <p><span>Telp:</span> +62 822 84xx xxxx</p>
-                                    <p><span>Email:</span> homecooking@gmail.com</p>
+                                    <p><span>Email:</span> halwa@gmail.com</p>
                                     <p><span>Jam Operasi:</span> Senin-Minggu (08.00-17.00)</p>
                                 </div>
                             </div>
@@ -436,8 +422,6 @@
     <script src="<?php echo base_url('/assets/tugas/'); ?>assets/js/main.js"></script>
     <script src="<?php echo base_url('/assets'); ?>lib/easing/easing.min.js"></script>
     <script src="<?php echo base_url('/assets'); ?>lib/owlcarousel/owl.carousel.min.js"></script>
-    <!-- <script src="<?php echo base_url('assets/'); ?>mail/jqBootstrapValidation.min.js"></script>
-    <script src="<?php echo base_url('assets/'); ?>mail/contact.js"></script> -->
     <script src="<?php echo base_url('assets/'); ?>js/main.js"></script>
 </body>
 
