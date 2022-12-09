@@ -6,16 +6,35 @@ class Catalog extends CI_Controller
 
     public function index()
     {
-        $this->load->view('catalog/hbd');
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $this->cekLogin();
+        $this->load->view('catalog/hbd', $data);
     }
 
+    // public function brownies()
+    // {
+    //     $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+    //     $this->cekLogin();
+    //     $this->load->view('catalog/brownis', $data);
+    // }
     public function brownies()
     {
-        $this->load->view('catalog/brownis');
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $this->cekLogin();
+        $this->load->view('catalog/brownis', $data);
     }
 
     public function desert()
     {
-        $this->load->view('catalog/dessert');
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+        $this->cekLogin();
+        $this->load->view('catalog/dessert', $data);
+    }
+
+    private function cekLogin()
+    {
+        if ($this->session->role_id == "" || $this->session->email == "") {
+            redirect('auth');
+        }
     }
 }

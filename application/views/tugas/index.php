@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>TUGAS AKHIR MSIB</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+
 
     <!-- Google Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet"> -->
@@ -34,10 +33,13 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
+                    <button class="btn btn-info" onclick="#"><i class="glyphicon glyphicon-plus"></i> Edit Hero</button>
                     <li><a class="nav-link scrollto active" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li>
-                    <li><a href="<?php echo base_url("index.php/Navbar/about"); ?>">About</a></li>
-                    <li><a href="<?php echo base_url("index.php/Navbar/service"); ?>">Services</a></li>
-                    <li><a href="<?php echo base_url("index.php/Navbar/portofolio"); ?>">Portofolio</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#portfolio">Portofolio</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li>
                     <li class="dropdown"><a href="#"><span>Catalogue</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a class="login-btn" href="<?php echo base_url("index.php/Catalog/index"); ?>">Birthday Cake</a></li>
@@ -45,13 +47,13 @@
                             <li><a class="login-btn" href="<?php echo base_url("index.php/Catalog/desert"); ?>">Dessert</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li>
-                        <a class="login-btn" href="<?php echo base_url("index.php/auth/index"); ?>">Sign In</a>
+
+                    <a class="login-btn" href="<?php echo base_url("index.php/auth/index"); ?>">Sign In</a>
                     </li>
                     <li>
                         <a class="login-btn" href="<?php echo base_url("index.php/auth/registration"); ?>">Sign Up</a>
                     </li>
+
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -67,17 +69,21 @@
 
                 <div class="carousel-inner" role="listbox">
 
-                    <div class="carousel-item active" style="background-image: url(<?php echo base_url(); ?>assets/carousel2.png)">
-                        <div class="carousel-container">
-                            <div class="container">
-                                <h2 class="animate__animated animate__fadeInDown">Halwa </h2>
-                                <p class="animate__animated animate__fadeInUp">Kami Menyediakan Berbagai Macam jenis Kue dan Dessert</p>
-                                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Pesan</a>
+
+                    <?php foreach ($carausel as $c) : ?>
+                        print_r($c);
+                        <div class="carousel-item active" style="background-image: url(<?php echo base_url("uploads/" . $c['file_foto']); ?>)">
+                            <div class="carousel-container">
+                                <div class="container">
+                                    <h2 class="animate__animated animate__fadeInDown"><?= $c['label']; ?></h2>
+                                    <p class="animate__animated animate__fadeInUp"><?= $c['deskripsi']; ?></p>
+                                    <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Pesan</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    <?php endforeach; ?>
 
-                    <div class="carousel-item" style="background-image: url(<?php echo base_url(); ?>assets/carousel.png)">
+                    <!-- <div class="carousel-item" style="background-image: url(<?php echo base_url(); ?>assets/carousel.png)">
                         <div class="carousel-container">
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">Halwa </h2>
@@ -95,7 +101,7 @@
                                 <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Pesan</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -523,7 +529,7 @@
                         <div class="footer-content">
                             <div class="footer-head">
                                 <div class="footer-logo">
-                                    <h2><span>H</span>ome Cooking</h2>
+                                    <h2><span>H</span>alwa</h2>
                                 </div>
 
                                 <p>Halwa adalah penyedia kualitas terkemuka untuk specialty bakery dan produk gula-gula dengan solusi katering profesional. Kami menyediakan dan mengirimkan produk ke individu, institusi, perusahaan, kafe, perusahaan katering serta rumah yang sesuai dengan kebutuhan dalam jumlah tak terbatas hingga kebutuhan pribadi sehari-hari.</p>

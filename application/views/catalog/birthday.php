@@ -47,15 +47,37 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
+
+            <!-- QUERY MENU -->
+            <?php
+            $queryMenu = "SELECT 'user_menu'.'id','menu'
+                            FROM 'user_menu' JOIN 'user_access_menu' 
+                            ON 'user_menu'.'id' = 'user_access_menu'.'menu_id'
+                            WHERE condition";
+            ?>
+
             <!-- Heading -->
             <div class="sidebar-heading">
-                Admin
+                All
             </div>
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url("index.php/Home/index"); ?>">
                     <i class="fas fa-fw fa-home"></i>
                     <span>Home</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Admin
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url("index.php/Admin/index"); ?>">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Hero</span></a>
             </li>
 
             <!-- Divider -->
@@ -75,7 +97,7 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Menu Pilihan:</h6>
-                        <a class="collapse-item login-btn" href="<?php echo base_url("index.php/Catalog/index"); ?>">Birthday Cake</a>
+                        <!-- <a class="collapse-item login-btn" href="<?php echo base_url("index.php/Catalog/hbd"); ?>">Birthday Cake</a> -->
                         <a class="collapse-item login-btn" href="<?php echo base_url("index.php/Catalog/brownies"); ?>">Brownies</a>
                         <a class="collapse-item login-btn" href="<?php echo base_url("index.php/Catalog/desert"); ?>">Dessert</a>
                     </div>
@@ -117,12 +139,18 @@
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <nav id="navbar" class="navbar">
-                            <!-- <ul>
-                                <li><a class="nav-link" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li>
+                            <!-- <ul> -->
+                            <!-- <li><a class="nav-link scrollto active" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li> -->
+                            <!-- <li><a class="nav-link scrollto" href="#about">About</a></li>
+                                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                                <li><a class="nav-link scrollto" href="#portfolio">Portofolio</a></li>
+                                <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+                            <!-- <li> -->
+                            <!-- <li><a class="nav-link" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li>
                                 <li><a class="nav-link" href="<?php echo base_url("index.php/Navbar/about"); ?>">About</a></li>
                                 <li><a class="nav-link" href=" <?php echo base_url("index.php/Navbar/service"); ?>">Services</a></li>
-                                <li><a class="nav-link" href=" <?php echo base_url("index.php/Navbar/portofolio"); ?>">Portofolio</a></li>
-                            </ul> -->
+                                <li><a class="nav-link" href=" <?php echo base_url("index.php/Navbar/portofolio"); ?>">Portofolio</a></li> -->
+                            <!-- </ul> -->
                             <i class="bi bi-list mobile-nav-toggle"></i>
                         </nav>
 
@@ -147,19 +175,18 @@
                     <!-- Products Start -->
                     <div class="container-fluid pt-5">
                         <div class="text-center mb-4">
-                            <h2 class="section-title px-5"><span class="px-2">Dessert</span></h2>
+                            <h2 class="section-title px-5"><span class="px-2">Birthday Cake</span></h2>
                         </div>
                         <div class="row px-xl-5 pb-3">
                             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                                 <div class="card product-item border-0 mb-4">
                                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/dessert/1.jpeg" alt="">
+                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/birthday/1.jpeg" alt="">
                                     </div>
                                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                        <h6 class="text-truncate mb-3">Choco Corndog</h6>
+                                        <h6 class="text-truncate mb-3">Strawberry Shortcake</h6>
                                         <div class="d-flex justify-content-center">
-                                            <h6>Rp 25.000,00</h6>
-                                            <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
+                                            <h6>Rp 160.000,00</h6>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
@@ -171,13 +198,12 @@
                             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                                 <div class="card product-item border-0 mb-4">
                                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/dessert/2.jpeg" alt="">
+                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/birthday/2.jpeg" alt="">
                                     </div>
                                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                        <h6 class="text-truncate mb-3">Donat Coklat</h6>
+                                        <h6 class="text-truncate mb-3">White Cake</h6>
                                         <div class="d-flex justify-content-center">
-                                            <h6>Rp 5.000,00</h6>
-                                            <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
+                                            <h6>Rp 140.000,00</h6>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
@@ -189,13 +215,12 @@
                             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                                 <div class="card product-item border-0 mb-4">
                                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/dessert/3.jpeg" alt="">
+                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/birthday/3.jpeg" alt="">
                                     </div>
                                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                        <h6 class="text-truncate mb-3">Mango Sticky Rice</h6>
+                                        <h6 class="text-truncate mb-3">Pink Cake</h6>
                                         <div class="d-flex justify-content-center">
-                                            <h6>Rp 30.000,00</h6>
-                                            <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
+                                            <h6>Rp 155.000,00</h6>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
@@ -207,13 +232,12 @@
                             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                                 <div class="card product-item border-0 mb-4">
                                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/dessert/4.jpeg" alt="">
+                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/birthday/4.jpeg" alt="">
                                     </div>
                                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                        <h6 class="text-truncate mb-3">Banan Nugget</h6>
+                                        <h6 class="text-truncate mb-3">Butterfly Cake</h6>
                                         <div class="d-flex justify-content-center">
-                                            <h6>Rp 35.000,00</h6>
-                                            <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
+                                            <h6>Rp 200.000,00</h6>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
@@ -225,13 +249,12 @@
                             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                                 <div class="card product-item border-0 mb-4">
                                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/dessert/5.jpeg" alt="">
+                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/birthday/5.jpeg" alt="">
                                     </div>
                                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                        <h6 class="text-truncate mb-3">Pancake</h6>
+                                        <h6 class="text-truncate mb-3">Rose Cake</h6>
                                         <div class="d-flex justify-content-center">
-                                            <h6>Rp 15.000,00</h6>
-                                            <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
+                                            <h6>Rp 170.000,00</h6>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
@@ -243,13 +266,12 @@
                             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                                 <div class="card product-item border-0 mb-4">
                                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/dessert/6.jpeg" alt="">
+                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/birthday/6.jpeg" alt="">
                                     </div>
                                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                        <h6 class="text-truncate mb-3">Salad Buah</h6>
+                                        <h6 class="text-truncate mb-3">Red Velvet Cake</h6>
                                         <div class="d-flex justify-content-center">
-                                            <h6>Rp 30.000,00</h6>
-                                            <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
+                                            <h6>Rp 210.000,00</h6>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
@@ -261,13 +283,12 @@
                             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                                 <div class="card product-item border-0 mb-4">
                                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/dessert/7.jpeg" alt="">
+                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/birthday/7.jpeg" alt="">
                                     </div>
                                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                        <h6 class="text-truncate mb-3">Cupcake Strawberry</h6>
+                                        <h6 class="text-truncate mb-3">Flower Cake</h6>
                                         <div class="d-flex justify-content-center">
-                                            <h6>Rp 20.000,00</h6>
-                                            <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
+                                            <h6>Rp 250.000,00</h6>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
@@ -279,13 +300,12 @@
                             <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                                 <div class="card product-item border-0 mb-4">
                                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/dessert/8.jpeg" alt="">
+                                        <img class="img-fluid w-100" src="<?php echo base_url('assets/'); ?>img/birthday/8.jpeg" alt="">
                                     </div>
                                     <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                        <h6 class="text-truncate mb-3">Pie Buah</h6>
+                                        <h6 class="text-truncate mb-3">Oreo Cake</h6>
                                         <div class="d-flex justify-content-center">
-                                            <h6>Rp 10.000,00</h6>
-                                            <!-- <h6 class="text-muted ml-2"><del>$123.00</del></h6> -->
+                                            <h6>Rp 240.000,00</h6>
                                         </div>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
