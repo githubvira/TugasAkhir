@@ -5,11 +5,6 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>TUGAS AKHIR MSIB</title>
-
-
-    <!-- Google Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet"> -->
-
     <!-- Vendor CSS Files -->
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,27 +28,16 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <button class="btn btn-info" onclick="#"><i class="glyphicon glyphicon-plus"></i> Edit Hero</button>
+
+                    <!-- <button class="btn btn-info" onclick="#"><i class="glyphicon glyphicon-plus"></i> Edit Hero</button> -->
                     <li><a class="nav-link scrollto active" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto" href="#portfolio">Portofolio</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li>
-                    <li class="dropdown"><a href="#"><span>Catalogue</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a class="login-btn" href="<?php echo base_url("index.php/Catalog/index"); ?>">Birthday Cake</a></li>
-                            <li><a class="login-btn" href="<?php echo base_url("index.php/Catalog/brownies"); ?>">Brownies</a></li>
-                            <li><a class="login-btn" href="<?php echo base_url("index.php/Catalog/desert"); ?>">Dessert</a></li>
-                        </ul>
-                    </li>
-
-                    <a class="login-btn" href="<?php echo base_url("index.php/auth/index"); ?>">Sign In</a>
-                    </li>
-                    <li>
-                        <a class="login-btn" href="<?php echo base_url("index.php/auth/registration"); ?>">Sign Up</a>
-                    </li>
-
+                    <li><a href="<?php echo base_url("index.php/Catalog/brownies"); ?>"><span>Product</span> </a></li>
+                    <li><a class="nav-link scrollto" href="<?php echo base_url("index.php/auth/index"); ?>">Sign In</a></li>
+                    <li><a class="nav-link scrollto" href="<?php echo base_url("index.php/auth/registration"); ?>">Sign up</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -82,26 +66,6 @@
                             </div>
                         </div>
                     <?php endforeach; ?>
-
-                    <!-- <div class="carousel-item" style="background-image: url(<?php echo base_url(); ?>assets/carousel.png)">
-                        <div class="carousel-container">
-                            <div class="container">
-                                <h2 class="animate__animated animate__fadeInDown">Halwa </h2>
-                                <p class="animate__animated animate__fadeInUp">Kami Menyediakan Berbagai Macam jenis Kue</p>
-                                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Pesan</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item" style="background-image: url(<?php echo base_url(); ?>assets/carousel3.png)">
-                        <div class="carousel-container">
-                            <div class="container">
-                                <h2 class="animate__animated animate__fadeInDown">Halwa </h2>
-                                <p class="animate__animated animate__fadeInUp">Kami Menyediakan Berbagai Macam jenis Kue</p>
-                                <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Pesan</a>
-                            </div>
-                        </div>
-                    </div> -->
 
                 </div>
 

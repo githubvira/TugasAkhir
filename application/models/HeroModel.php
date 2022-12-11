@@ -14,12 +14,26 @@ class HeroModel extends CI_Model
         if ($this->db->simple_query($q)) {
             return true;
         } else {
+
             return false;
         }
     }
 
-    public function getHero()
+    public function updateHero($id, $data = [])
     {
+        $this->db->where('id', $id);
+        $this->db->update('hero_unit', $data);
+        // echo $this->db->last_query();
+        // die;
+        if ($this->db->affected_rows()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    public function getHero(){
         $q = "
             SELECT * FROM `hero_unit` WHERE 1
         ";
