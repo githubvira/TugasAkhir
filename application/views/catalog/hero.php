@@ -51,12 +51,14 @@
         <div class="sidebar-heading">
             All
         </div>
+
         <!-- Nav Item - Dashboard -->
-        <!-- <li class="nav-item">
+        <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url("index.php/Home/index"); ?>">
                 <i class="fas fa-fw fa-home"></i>
                 <span>Home</span></a>
-        </li> -->
+        </li>
+
 
         <!-- Divider -->
         <hr class="sidebar-divider">

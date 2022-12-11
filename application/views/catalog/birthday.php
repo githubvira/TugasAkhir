@@ -48,24 +48,19 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- QUERY MENU -->
-            <?php
-            $queryMenu = "SELECT 'user_menu'.'id','menu'
-                            FROM 'user_menu' JOIN 'user_access_menu' 
-                            ON 'user_menu'.'id' = 'user_access_menu'.'menu_id'
-                            WHERE condition";
-            ?>
 
             <!-- Heading -->
             <div class="sidebar-heading">
                 All
             </div>
+
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url("index.php/Home/index"); ?>">
                     <i class="fas fa-fw fa-home"></i>
                     <span>Home</span></a>
             </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -82,11 +77,24 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Admin
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url("#"); ?>">
+                    <i class="fas fa-fw fa-list"></i>
+                    <span>Menu</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
                 User
             </div>
+
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
@@ -122,6 +130,7 @@
 
         </ul>
         <!-- End of Sidebar -->
+
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -139,18 +148,12 @@
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <nav id="navbar" class="navbar">
-                            <!-- <ul> -->
-                            <!-- <li><a class="nav-link scrollto active" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li> -->
-                            <!-- <li><a class="nav-link scrollto" href="#about">About</a></li>
-                                <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                                <li><a class="nav-link scrollto" href="#portfolio">Portofolio</a></li>
-                                <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-                            <!-- <li> -->
-                            <!-- <li><a class="nav-link" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li>
-                                <li><a class="nav-link" href="<?php echo base_url("index.php/Navbar/about"); ?>">About</a></li>
-                                <li><a class="nav-link" href=" <?php echo base_url("index.php/Navbar/service"); ?>">Services</a></li>
-                                <li><a class="nav-link" href=" <?php echo base_url("index.php/Navbar/portofolio"); ?>">Portofolio</a></li> -->
-                            <!-- </ul> -->
+                            <!-- <ul>
+                    <li><a class="nav-link" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li>
+                    <li><a class="nav-link" href="<?php echo base_url("index.php/Navbar/about"); ?>">About</a></li>
+                    <li><a class="nav-link" href=" <?php echo base_url("index.php/Navbar/service"); ?>">Services</a></li>
+                    <li><a class="nav-link" href=" <?php echo base_url("index.php/Navbar/portofolio"); ?>">Portofolio</a></li>
+                </ul> -->
                             <i class="bi bi-list mobile-nav-toggle"></i>
                         </nav>
 

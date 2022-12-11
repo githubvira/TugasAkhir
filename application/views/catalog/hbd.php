@@ -46,28 +46,11 @@
         <!-- Divider -->
         <hr class="sidebar-divider my-0">
 
-        <!-- QUERY -->
-        <?php
-        // $role_id = $this->session->userdata('role_id');
-        // $queryMenu = "SELECT 'user_menu'.'id', 'menu'
-        //                 FROM 'user_menu' JOIN 
-        //                 'user_access_menu'
-        //                 ON 'user_menu'.'id' =
-        //                  'user_access_menu'.'menu_id'
-        //                 WHERE 'user_access_menu'.'role_id' =$role_id
-        //                 ORDER BY 'user_access_menu'.'menu_id' ASC
-        //                 ";
-        // $menu = $this->db->query($queryMenu)->result_array();
-        // var_dump($menu);
-        // die;
-        ?>
-
-
-
         <!-- Heading -->
         <div class="sidebar-heading">
             All
         </div>
+
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url("index.php/Home/index"); ?>">
@@ -119,7 +102,7 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Menu Pilihan:</h6>
-                    <!-- <a class="collapse-item login-btn" href="<?php echo base_url("index.php/Catalog/hbd"); ?>">Birthday Cake</a> -->
+                    <a class="collapse-item login-btn" href="<?php echo base_url("index.php/Catalog/birthday"); ?>">Birthday Cake</a>
                     <a class="collapse-item login-btn" href="<?php echo base_url("index.php/Catalog/brownies"); ?>">Brownies</a>
                     <a class="collapse-item login-btn" href="<?php echo base_url("index.php/Catalog/desert"); ?>">Dessert</a>
                 </div>
@@ -162,12 +145,6 @@
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <nav id="navbar" class="navbar">
-                        <!-- <ul>
-                    <li><a class="nav-link" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li>
-                    <li><a class="nav-link" href="<?php echo base_url("index.php/Navbar/about"); ?>">About</a></li>
-                    <li><a class="nav-link" href=" <?php echo base_url("index.php/Navbar/service"); ?>">Services</a></li>
-                    <li><a class="nav-link" href=" <?php echo base_url("index.php/Navbar/portofolio"); ?>">Portofolio</a></li>
-                </ul> -->
                         <i class="bi bi-list mobile-nav-toggle"></i>
                     </nav>
 
