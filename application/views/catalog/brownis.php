@@ -80,7 +80,7 @@
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="<?= base_url("Catalog/brownies") ?>">Tampilkan Semua</a>
                                             <a class="dropdown-item" href="<?= base_url("Catalog/brownies/Brownies") ?>">Brownies</a>
-                                            <a class="dropdown-item" href="<?= base_url("Catalog/brownies/Cake") ?>">Birthday Cake</a>
+                                            <a class="dropdown-item" href="<?= base_url("Catalog/brownies/Cake") ?>">Cake</a>
                                             <a class="dropdown-item" href="<?= base_url("Catalog/brownies/Dessert") ?>">Dessert</a>
 
                                         </div>
@@ -119,7 +119,7 @@
                                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                                 <h6 class="text-truncate mb-3"><?= $item['nama_produk']; ?></h6>
                                                 <div class="d-flex justify-content-center">
-                                                    <h6>Rp. <?= $item['harga_produk']; ?></h6><br>
+                                                    <h6><?= $item['harga_produk']; ?></h6><br>
                                                 </div>
                                                 <h6><?= $item['deskripsi']; ?></h6>
                                             </div>

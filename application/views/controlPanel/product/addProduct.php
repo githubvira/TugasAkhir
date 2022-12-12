@@ -36,7 +36,7 @@
 
                                         <div class="form-group">
                                             <label>Jenis Produk</label>
-                                            <input type="text" name="deskripsi" id="deskripsi" class="form-control" placeholder="Masukkan Jenis Produk" value="abc" required>
+                                            <input type="text" name="jenis_produk" id="jenis_produk" class="form-control" placeholder="Masukkan Jenis Produk" value="abc" required>
                                         </div>
                                         <div class="form-group">
                                             <label>Deskripsi</label>

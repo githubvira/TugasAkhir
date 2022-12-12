@@ -47,6 +47,7 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                        <?php $i = 1 ?>
                                         <?php foreach ($productList as $key => $item) : ?>
                                             <form action='<?= base_url("Admin/productUpdate/"); ?>' method="post">
                                                 <input type="hidden" name="id" value="<?= $item['id']; ?>">
@@ -54,7 +55,7 @@
                                                         print_r($item);
                                                         ?> -->
                                                 <tr>
-                                                    <td><?= $item['id']; ?></td>
+                                                    <td><?= $i; ?></td>
                                                     <td><?= $item['nama_produk']; ?></td>
                                                     <td><?= $item['harga_produk']; ?></td>
                                                     <td><?= $item['jenis_produk']; ?></td>
@@ -63,6 +64,7 @@
                                                         <img src="<?= base_url("uploads/" . $item['file_foto']); ?>" width="100px" alt="">
                                                     </td>
                                                 </tr>
+                                                <?php $i++; ?>
                                             </form>
                                         <?php endforeach; ?>
 

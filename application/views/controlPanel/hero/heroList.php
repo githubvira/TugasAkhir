@@ -45,18 +45,21 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                        <?php $i = 1 ?>
                                         <?php foreach ($heroList as $key => $item) : ?>
                                             <form action='<?= base_url("Admin/heroUpdate/"); ?>' method="post">
                                                 <input type="hidden" name="id" value="<?= $item['id']; ?>">
                                                 <tr>
-                                                    <td><?= $item['id']; ?></td>
+                                                    <td><?= $i; ?></td>
                                                     <td><?= $item['label']; ?></td>
                                                     <td><?= $item['deskripsi']; ?></td>
                                                     <td>
                                                         <img src="<?= base_url("uploads/" . $item['file_foto']); ?>" width="100px" alt="">
                                                     </td>
                                                 </tr>
+                                                <?php $i++; ?>
                                             </form>
+
                                         <?php endforeach; ?>
 
 

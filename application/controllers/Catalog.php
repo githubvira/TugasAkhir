@@ -30,11 +30,17 @@ class Catalog extends CI_Controller
         } else {
             $data['items'] = $this->productModel->searchProduct($search, $filter);
         }
-        
+        if ($data['items']) {
+            foreach ($data['items'] as &$item) {
+                $item['harga_produk'] = $this->formatToRupiah($item['harga_produk']);
+            }
+        }
         
         $this->load->view('catalog/brownis', $data);
     }
-
+    public function formatToRupiah($price){
+        return  "Rp " . number_format($price, 2, ',', '.');
+    }
 
     public function desert()
     {

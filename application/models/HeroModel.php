@@ -21,8 +21,8 @@ class HeroModel extends CI_Model
 
     public function updateHero($id, $data = [])
     {
-        $this->db->where('id', $id);
-        $this->db->update('hero_unit', $data);
+        // $this->db->where('id', $id);
+        $this->db->update('hero_unit', $data, ['id'=>$id]);
         // echo $this->db->last_query();
         // die;
         if ($this->db->affected_rows()) {

@@ -16,10 +16,7 @@ class ProductModel extends CI_Model
 
     public function updateProduct($id, $data = [])
     {
-        $this->db->where('id', $id);
-        $this->db->update('Product_unit', $data);
-        // echo $this->db->last_query();
-        // die;
+        $this->db->update('Product_unit', $data, ['id'=>$id]);
         if ($this->db->affected_rows()) {
             return true;
         } else {

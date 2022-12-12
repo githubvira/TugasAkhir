@@ -95,6 +95,7 @@ class Admin extends CI_Controller
     if ($this->form_validation->run()) {
       $id = $this->input->post('id');
       $data['status_persetujuan'] = $this->input->post('status_persetujuan');
+      
       if ($this->productModel->updateProduct($id, $data)) {
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Success</div>');
       } else {
@@ -107,39 +108,136 @@ class Admin extends CI_Controller
     redirect('Admin/productEvaluate');
   }
 
-
-  public function deleteProduct($id){
+  public function deleteProduct($id)
+  {
     $this->debugMode(__FILE__, __FUNCTION__);
     if ($id != "") {
       $img = $this->productModel->getProductById($id)['file_foto'];
       if ($this->productModel->deleteProduct($id)) {
-        unlink( BASEPATH . "./../uploads/" . $img);
+        unlink(BASEPATH . "./../uploads/" . $img);
         echo "success";
-      }else{
+      } else {
         echo "failed";
       }
-    }{
+    } {
       redirect('Admin/productEvaluate');
     }
     redirect('Admin/productEvaluate');
   }
-  public function deleteHero($id){
+
+
+  // public function editProduct($id)
+  // {
+  //   $this->productModel->getProductById($id);
+  //   $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Product has been edited!</div>');
+  //   redirect('Admin/productEvaluate');
+  // }
+  private function deleteImage($imageName){
+    try {
+        unlink(BASEPATH . "./../uploads/" . $imageName);
+        return true;
+    } catch (\Throwable $th) {
+      return false;
+    }
+  }
+  private function uploadImage($fieldName){
+    $r = [
+      'success' => true,
+      'file_name' => ''
+    ];
+    $config['upload_path']          = BASEPATH . "./../uploads";
+    $config['allowed_types']        = 'gif|jpg|png|jpeg';
+    $config['max_size']             = 100000;
+    $config['max_width']            = 4000;
+    $config['max_height']           = 4000;
+    $this->load->library('upload', $config);
+
+    if (!$this->upload->do_upload($fieldName)) {
+      $error = array('error' => $this->upload->display_errors());
+      print_r($error);
+      return false;
+    } else {
+      $data = array('upload_data' => $this->upload->data());
+      echo "sukses";
+      print_r($data);
+      $r['file_name'] = $data['upload_data']['file_name'];
+      return $r;
+    }
+  }
+  
+  public function editProduct($id){
     $this->debugMode(__FILE__, __FUNCTION__);
     if ($id != "") {
-      $img = $this->heroModel->getHeroById($id)['file_foto'];
-      if ($this->heroModel->deleteHero($id)) {
-        unlink( BASEPATH . "./../uploads/" . $img);
-        echo "success";
-      }else{
-        echo "failed";
+      $data = [
+        'nama_produk' => $this->input->post("nama_produk"),
+        'deskripsi' => $this->input->post("deskripsi"),
+        'harga_produk' => $this->input->post("harga"),
+        'jenis_produk' => $this->input->post("jenis_produk"),
+      ];
+      
+      if (isset($_FILES['file_foto']['name']) && $_FILES['file_foto']['name'] != "") {
+        $imgUpload = $this->uploadImage("file_foto");
+        if ($imgUpload) {
+          $data['file_foto'] = $imgUpload['file_name'];
+        }
+        $oldImg = $this->productModel->getProductById($id)['file_foto'];
+        $this->deleteImage($oldImg);
       }
-    }{
+      if ($this->productModel->updateProduct($id, $data)) {
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Success</div>');
+      }else {
+        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Something Went wrong</div>');
+      }
+      
+    } else {
+      redirect('Admin/productEvaluate');
+    }
+    redirect('Admin/productEvaluate');
+  }
+  public function editHero($id){
+    $this->debugMode(__FILE__, __FUNCTION__);
+    if ($id != "") {
+      $data = [
+        'label' => $this->input->post("label"),
+        'deskripsi' => $this->input->post("deskripsi"),
+        'status_persetujuan' => $this->input->post("status_persetujuan"),
+      ];
+      
+      if (isset($_FILES['file_foto']['name']) && $_FILES['file_foto']['name'] != "") {
+        $imgUpload = $this->uploadImage("file_foto");
+        if ($imgUpload) {
+          $data['file_foto'] = $imgUpload['file_name'];
+        }
+        $oldImg = $this->heroModel->getHeroById($id)['file_foto'];
+        $this->deleteImage($oldImg);
+      }
+      if ($this->heroModel->updateHero($id, $data)) {
+        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Success</div>');
+      }else {
+        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Something Went wrong</div>');
+      }
+      
+    } else {
       redirect('Admin/heroEvaluate');
     }
     redirect('Admin/heroEvaluate');
   }
-
-
+  public function deleteHero($id)
+  {
+    $this->debugMode(__FILE__, __FUNCTION__);
+    if ($id != "") {
+      $img = $this->heroModel->getHeroById($id)['file_foto'];
+      if ($this->heroModel->deleteHero($id)) {
+        unlink(BASEPATH . "./../uploads/" . $img);
+        echo "success";
+      } else {
+        echo "failed";
+      }
+    } {
+      redirect('Admin/heroEvaluate');
+    }
+    redirect('Admin/heroEvaluate');
+  }
 
   private function debugMode($fileName, $function)
   {
