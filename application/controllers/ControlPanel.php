@@ -31,7 +31,7 @@ class ControlPanel extends CI_Controller
   {
     $this->debugMode(__FILE__, __FUNCTION__);
 
-    $data['title'] = 'Admin Hero';
+    $data['title'] = 'Admin Hero';  
     $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
     $this->load->view('controlPanel/template/header', $data);
     $this->load->view('controlPanel/template/sidebar', $data);

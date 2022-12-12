@@ -2,7 +2,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Product</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Add Product</h1>
                     <!-- CONTENT -->
 
 
@@ -17,15 +17,26 @@
                                     <div class="panel-body">
                                         <div class="form-group">
                                             <label>Nama Produk</label>
-                                            <input type="text" name="nama_produk" id="nama_produk" class="form-control" placeholder="Masukkan product Anda" value="abc" required>
+                                            <input type="text" name="nama_produk" id="nama_produk" class="form-control" placeholder="Masukkan nama product" value="abc" required>
                                         </div>
                                         <div class="form-group">
                                             <label>Harga Produk</label>
-                                            <input type="number" name="harga_produk" id="harga_produk" class="form-control" placeholder="Masukkan deskripsi" value="123" required>
+                                            <input type="number" name="harga_produk" id="harga_produk" class="form-control" placeholder="Masukkan Harga" value="123" required>
                                         </div>
+
+                                        <!-- <div class="form-group">
+                                            <label>Jenis Produk</label>
+                                            <select id="jenis_produk" name="jenis_produk">
+                                                <option value="australia">Brownies</option>
+                                                <option value="canada">Birthday Cake</option>
+                                                <option value="usa">Dessert</option>
+                                            </select>
+                                        </div> -->
+
+
                                         <div class="form-group">
                                             <label>Jenis Produk</label>
-                                            <input type="text" name="jenis_produk" id="jenis_produk" class="form-control" placeholder="Masukkan deskripsi" value="abc" required>
+                                            <input type="text" name="deskripsi" id="deskripsi" class="form-control" placeholder="Masukkan Jenis Produk" value="abc" required>
                                         </div>
                                         <div class="form-group">
                                             <label>Deskripsi</label>

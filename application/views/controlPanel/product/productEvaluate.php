@@ -33,6 +33,7 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>No</th>
                                             <th>Nama Produk</th>
                                             <th>Harga Produk</th>
                                             <th>Jenis Produk</th>
@@ -40,10 +41,13 @@
                                             <th>File Foto</th>
                                             <th>status_persetujuan</th>
                                             <th>Update</th>
+                                            <th>Delete</th>
+                                            <th>Edit</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
+                                            <th>No</th>
                                             <th>Nama Produk</th>
                                             <th>Harga Produk</th>
                                             <th>Jenis Produk</th>
@@ -51,6 +55,9 @@
                                             <th>File Foto</th>
                                             <th>status_persetujuan</th>
                                             <th>Update</th>
+                                            <th>Delete</th>
+                                            <th>Edit</th>
+
 
                                         </tr>
                                     </tfoot>
@@ -59,6 +66,7 @@
                                             <form action='<?= base_url("Admin/productUpdate"); ?>' method="post">
                                                 <input type="hidden" name="id" value="<?= $item['id']; ?>">
                                                 <tr>
+                                                    <td><?= $item['id']; ?></td>
                                                     <td><?= $item['nama_produk']; ?></td>
                                                     <td><?= $item['harga_produk']; ?></td>
                                                     <td><?= $item['jenis_produk']; ?></td>
@@ -81,6 +89,16 @@
                                                             </span>
                                                             <span class="text">Update</span>
                                                         </button>
+                                                    </td>
+                                                    <td>
+                                                        <a href="<?= base_url('Admin/deleteProduct/' . $item['id']); ?>">
+                                                            <button type="button" class="btn btn-danger btn-icon-split">
+                                                                <span class="icon text-white-50">
+                                                                    <i class="fas fa-info-circle"></i>
+                                                                </span>
+                                                                <span class="text">Delete</span>
+                                                            </button>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                             </form>

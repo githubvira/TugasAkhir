@@ -2,11 +2,8 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <h1 class="h3 mb-4 text-gray-800">List product</h1>
                     <!-- CONTENT -->
-
-
-
 
 
                     <!-- <?php foreach ($productList as $key => $value) : ?>
@@ -17,9 +14,10 @@
 
 
 
-                    <?=
-                    $this->session->flashdata('message');
-                    ?>
+                    <!-- <?=
+                            $this->session->flashdata('message');
+                            ?> -->
+
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
@@ -30,15 +28,17 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <<th>Nama Produk</th>
-                                                <th>Harga Produk</th>
-                                                <th>Jenis Produk</th>
-                                                <th>Deskripsi</th>
-                                                <th>File Foto</th>
+                                            <th>No</th>
+                                            <th>Nama Produk</th>
+                                            <th>Harga Produk</th>
+                                            <th>Jenis Produk</th>
+                                            <th>Deskripsi</th>
+                                            <th>File Foto</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
+                                            <th>No</th>
                                             <th>Nama Produk</th>
                                             <th>Harga Produk</th>
                                             <th>Jenis Produk</th>
@@ -50,10 +50,11 @@
                                         <?php foreach ($productList as $key => $item) : ?>
                                             <form action='<?= base_url("Admin/productUpdate/"); ?>' method="post">
                                                 <input type="hidden" name="id" value="<?= $item['id']; ?>">
-                                                <?php
-                                                    print_r($item);
-                                                ?>
+                                                <!-- <?php
+                                                        print_r($item);
+                                                        ?> -->
                                                 <tr>
+                                                    <td><?= $item['id']; ?></td>
                                                     <td><?= $item['nama_produk']; ?></td>
                                                     <td><?= $item['harga_produk']; ?></td>
                                                     <td><?= $item['jenis_produk']; ?></td>

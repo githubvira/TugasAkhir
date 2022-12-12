@@ -10,8 +10,18 @@ class Home extends CI_Controller
     }
     public function index()
     {
+        // echo __FILE__;
+        // echo $this->session->role_id;
+        // if ($this->session->role_id == '1') {
 
-        $data['carausel'] = $this->heroModel->getHero();
+        //     echo '<>';
+        // } else {
+        //     echo "user";
+        // }
+        // $this->load->model('M_heroUnit');
+        // $data['hero'] = $this->M_heroUnit->getHero();
+
+        $data['carausel'] = $this->heroModel->getAllowedHero();
 
         $this->load->view('tugas/index', $data);
     }

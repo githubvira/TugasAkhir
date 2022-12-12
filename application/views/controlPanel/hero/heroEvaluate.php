@@ -33,20 +33,26 @@
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                           <thead>
                             <tr>
+                              <th>No</th>
                               <th>Label</th>
                               <th>deskripsi</th>
                               <th>file_foto</th>
                               <th>status_persetujuan</th>
                               <th>Update</th>
+                              <th>Delete</th>
+                              <th>Edit</th>
                             </tr>
                           </thead>
                           <tfoot>
                             <tr>
+                              <th>No</th>
                               <th>Label</th>
                               <th>deskripsi</th>
                               <th>file_foto</th>
                               <th>status_persetujuan</th>
                               <th>Update</th>
+                              <th>Delete</th>
+                              <th>Edit</th>
                             </tr>
                           </tfoot>
                           <tbody>
@@ -54,6 +60,7 @@
                               <form action='<?= base_url("Admin/heroUpdate/"); ?>' method="post">
                                 <input type="hidden" name="id" value="<?= $item['id']; ?>">
                                 <tr>
+                                  <td><?= $item['id']; ?></td>
                                   <td><?= $item['label']; ?></td>
                                   <td><?= $item['deskripsi']; ?></td>
                                   <td>
@@ -73,6 +80,16 @@
                                       </span>
                                       <span class="text">Update</span>
                                     </button>
+                                  </td>
+                                  <td>
+                                    <a href="<?= base_url('Admin/deleteHero/' . $item['id']); ?>">
+                                      <button type="button" class="btn btn-danger btn-icon-split">
+                                        <span class="icon text-white-50">
+                                          <i class="fas fa-info-circle"></i>
+                                        </span>
+                                        <span class="text">Delete</span>
+                                      </button>
+                                    </a>
                                   </td>
                                 </tr>
                               </form>

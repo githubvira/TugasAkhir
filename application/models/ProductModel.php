@@ -26,7 +26,18 @@ class ProductModel extends CI_Model
             return false;
         }
     }
-
+    public function deleteProduct($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('product_unit');
+        // echo $this->db->last_query();
+        // die;
+        if ($this->db->affected_rows()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
     public function getProduct(){
         $q = "
             SELECT * FROM `product_unit` WHERE 1
@@ -34,6 +45,17 @@ class ProductModel extends CI_Model
         $res = $this->db->query($q)->result_array();
         if ($res) {
             return $res;
+        } else {
+            return [];
+        }
+    }
+    public function getProductById($id){
+        $q = "
+            SELECT * FROM `product_unit` WHERE id='$id'
+        ";
+        $res = $this->db->query($q)->result_array();
+        if ($res) {
+            return $res[0];
         } else {
             return [];
         }

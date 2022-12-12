@@ -2,7 +2,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Hero List</h1>
                     <!-- CONTENT -->
 
 
@@ -30,6 +30,7 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>No</th>
                                             <th>Label</th>
                                             <th>deskripsi</th>
                                             <th>file_foto</th>
@@ -37,6 +38,7 @@
                                     </thead>
                                     <tfoot>
                                         <tr>
+                                            <th>No</th>
                                             <th>Label</th>
                                             <th>deskripsi</th>
                                             <th>file_foto</th>
@@ -47,6 +49,7 @@
                                             <form action='<?= base_url("Admin/heroUpdate/"); ?>' method="post">
                                                 <input type="hidden" name="id" value="<?= $item['id']; ?>">
                                                 <tr>
+                                                    <td><?= $item['id']; ?></td>
                                                     <td><?= $item['label']; ?></td>
                                                     <td><?= $item['deskripsi']; ?></td>
                                                     <td>

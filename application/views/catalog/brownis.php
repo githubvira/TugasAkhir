@@ -80,7 +80,7 @@
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="<?= base_url("Catalog/brownies") ?>">Tampilkan Semua</a>
                                             <a class="dropdown-item" href="<?= base_url("Catalog/brownies/Brownies") ?>">Brownies</a>
-                                            <a class="dropdown-item" href="<?= base_url("Catalog/brownies/Cake") ?>">Cake</a>
+                                            <a class="dropdown-item" href="<?= base_url("Catalog/brownies/Cake") ?>">Birthday Cake</a>
                                             <a class="dropdown-item" href="<?= base_url("Catalog/brownies/Dessert") ?>">Dessert</a>
 
                                         </div>

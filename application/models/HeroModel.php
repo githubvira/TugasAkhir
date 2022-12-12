@@ -31,11 +31,46 @@ class HeroModel extends CI_Model
             return false;
         }
     }
-
+    public function deleteHero($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('hero_unit');
+        // echo $this->db->last_query();
+        // die;
+        if ($this->db->affected_rows()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public function getHero(){
         $q = "
             SELECT * FROM `hero_unit` WHERE 1
+        ";
+        // $this->db->query($q);
+        $res = $this->db->query($q)->result_array();
+        if ($res) {
+            return $res;
+        } else {
+            return [];
+        }
+    }
+    public function getHeroById($id){
+        $q = "
+            SELECT * FROM `hero_unit` WHERE id='$id'
+        ";
+        // $this->db->query($q);
+        $res = $this->db->query($q)->result_array();
+        if ($res) {
+            return $res[0];
+        } else {
+            return [];
+        }
+    }
+    public function getAllowedHero(){
+        $q = "
+            SELECT * FROM `hero_unit` WHERE status_persetujuan = 'disetujui'
         ";
         // $this->db->query($q);
         $res = $this->db->query($q)->result_array();

@@ -108,7 +108,36 @@ class Admin extends CI_Controller
   }
 
 
-
+  public function deleteProduct($id){
+    $this->debugMode(__FILE__, __FUNCTION__);
+    if ($id != "") {
+      $img = $this->productModel->getProductById($id)['file_foto'];
+      if ($this->productModel->deleteProduct($id)) {
+        unlink( BASEPATH . "./../uploads/" . $img);
+        echo "success";
+      }else{
+        echo "failed";
+      }
+    }{
+      redirect('Admin/productEvaluate');
+    }
+    redirect('Admin/productEvaluate');
+  }
+  public function deleteHero($id){
+    $this->debugMode(__FILE__, __FUNCTION__);
+    if ($id != "") {
+      $img = $this->heroModel->getHeroById($id)['file_foto'];
+      if ($this->heroModel->deleteHero($id)) {
+        unlink( BASEPATH . "./../uploads/" . $img);
+        echo "success";
+      }else{
+        echo "failed";
+      }
+    }{
+      redirect('Admin/heroEvaluate');
+    }
+    redirect('Admin/heroEvaluate');
+  }
 
 
 
