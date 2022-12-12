@@ -16,7 +16,7 @@ class ProductModel extends CI_Model
 
     public function updateProduct($id, $data = [])
     {
-        $this->db->update('Product_unit', $data, ['id'=>$id]);
+        $this->db->update('Product_unit', $data, ['id' => $id]);
         if ($this->db->affected_rows()) {
             return true;
         } else {
@@ -35,7 +35,8 @@ class ProductModel extends CI_Model
             return false;
         }
     }
-    public function getProduct(){
+    public function getProduct()
+    {
         $q = "
             SELECT * FROM `product_unit` WHERE 1
         ";
@@ -46,7 +47,8 @@ class ProductModel extends CI_Model
             return [];
         }
     }
-    public function getProductById($id){
+    public function getProductById($id)
+    {
         $q = "
             SELECT * FROM `product_unit` WHERE id='$id'
         ";
@@ -57,7 +59,8 @@ class ProductModel extends CI_Model
             return [];
         }
     }
-    public function getAllowedProduct(){
+    public function getAllowedProduct()
+    {
         $q = "
             SELECT * FROM `product_unit` WHERE status_persetujuan='disetujui'
         ";
@@ -68,7 +71,8 @@ class ProductModel extends CI_Model
             return [];
         }
     }
-    public function getProductByProductType($productType){
+    public function getProductByProductType($productType)
+    {
         $q = "
             SELECT * FROM `product_unit` WHERE LOWER(jenis_produk)=LOWER('$productType')
         ";
@@ -79,20 +83,21 @@ class ProductModel extends CI_Model
             return [];
         }
     }
-    public function searchProduct($query, $filter){
+    public function searchProduct($query, $filter)
+    {
         if ($filter != "") {
             $f = "AND LOWER(jenis_produk) = LOWER('$filter')";
-        }else{
+        } else {
             $f = "";
         }
         if ($query != "") {
             $s = "AND LOWER(nama_produk) LIKE LOWER('%$query%')
                 OR LOWER(jenis_produk) LIKE LOWER('%$query%')
                 OR LOWER(deskripsi) LIKE LOWER('%$query%')";
-        }else{
+        } else {
             $s = "";
         }
-        
+
         $q = "
             SELECT * 
             FROM `product_unit`
@@ -102,14 +107,65 @@ class ProductModel extends CI_Model
                 $s
         ";
         $res = $this->db->query($q)->result_array();
-        
-        
-        
+
+
+
         if ($res) {
             return $res;
         } else {
             return [];
         }
+    }
+
+    public function showbyharga($range)
+    {
+        if ($range != "") {
+            $h = $this->rangeHarga($range);
+        } else {
+            $h = "";
+        }
+
+        $q = "
+            SELECT * 
+            FROM `product_unit`
+            WHERE
+                status_persetujuan='disetujui'
+                $h
+        ";
+        $res = $this->db->query($q)->result_array();
+
+
+
+        if ($res) {
+            return $res;
+        } else {
+            return [];
+        }
+    }
+    public function rangeHarga($value)
+    {
+        $p = "";
+        switch ($value) {
+            case 0:
+                $p = "";
+                break;
+            case 1:
+                $p = " AND harga_produk BETWEEN 0 AND 50000";
+                break;
+            case 2:
+                $p = " AND harga_produk BETWEEN 51000 AND 100000";
+                break;
+            case 3:
+                $p = " AND harga_produk BETWEEN 101000 AND 150000";
+                break;
+            case 4:
+                $p = " AND harga_produk BETWEEN 151000 AND 200000";
+                break;
+            default:
+                $p = "";
+                break;
+        }
+        return $p;
     }
 }
 // id

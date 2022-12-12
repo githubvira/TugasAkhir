@@ -85,6 +85,43 @@
 
                                         </div>
                                     </div>
+                                </div>
+
+                                <div class="droppdown ml-4">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary">Filter</button>
+                                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <!-- <span class="visually-hidden">Toggle Dropdown</span> -->
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <span class="dropdown-item">Range harga :</span>
+                                            <form method="GET" action="<?= base_url('Catalog/brownies'); ?>">
+                                                <div class="dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
+                                                    <input type="radio" class="form-check-input" name="filterharga" id="harga0" value="0">
+                                                    <label class="form-check-label" for="harga0">Semua Harga</label>
+                                                </div>
+                                                <div class="dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
+                                                    <input type="radio" class="form-check-input" name="filterharga" id="harga1" value="1">
+                                                    <label class="form-check-label" for="harga1">Rp. 0 - Rp. 50.000</label>
+                                                </div>
+                                                <div class="dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
+                                                    <input type="radio" class="form-check-input" name="filterharga" id="harga2" value="2">
+                                                    <label class="form-check-label" for="harga2">Rp. 51.000 - Rp. 100.000</label>
+                                                </div>
+                                                <div class=" dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
+                                                    <input type="radio" class="form-check-input" name="filterharga" id="harga3" value="3">
+                                                    <label class="form-check-label" for="harga3">Rp. 101.000 - Rp. 150.000</label>
+                                                </div>
+                                                <div class=" dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
+                                                    <input type="radio" class="form-check-input" name="filterharga" id="harga4" value="4">
+                                                    <label class="form-check-label" for="harga4">Rp. 151.000 - Rp. 200.000</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Terapkan</button>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
 
                             </ul>
                             <i class="bi bi-list mobile-nav-toggle"></i>

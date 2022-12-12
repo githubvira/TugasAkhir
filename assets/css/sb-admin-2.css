@@ -2355,6 +2355,18 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.btn-filter {
+  color: #fff;
+  background-color: #269edb;
+  border-color: #269edb;
+}
+
+.btn-filter:hover {
+  color: #fff;
+  background-color: #4eafdf;
+  border-color: #4eafdf;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #4e73df;

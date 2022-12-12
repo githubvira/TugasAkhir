@@ -3,7 +3,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Catalog extends CI_Controller
 {
-    public function __construct(){
+    public function __construct()
+    {
         parent::__construct();
         $this->load->library('form_validation');
         // $this->load->model("HeroModel", "heroModel");
@@ -18,27 +19,34 @@ class Catalog extends CI_Controller
         $this->load->view('catalog/hbd', $data);
     }
 
-    public function brownies($filter = ""){
+    public function brownies($filter = "")
+    {
         $search = $this->input->get('search');
+        // $filter = $this->input->get('filter');
+        $filterharga = $this->input->get('filterharga');
         $data['search'] = $search;
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
         $this->cekLogin();
-        
-        
-        if ($search=="" && $filter=="") {
+
+        if ($search == "" && $filter == "" && $filterharga == "") {
             $data['items'] = $this->productModel->getAllowedProduct();
+        } else if ($filterharga != "") {
+            $data['items'] = $this->productModel->showbyharga($filterharga);
         } else {
             $data['items'] = $this->productModel->searchProduct($search, $filter);
         }
+
         if ($data['items']) {
             foreach ($data['items'] as &$item) {
                 $item['harga_produk'] = $this->formatToRupiah($item['harga_produk']);
             }
         }
-        
+
         $this->load->view('catalog/brownis', $data);
     }
-    public function formatToRupiah($price){
+    public function formatToRupiah($price)
+    {
         return  "Rp " . number_format($price, 2, ',', '.');
     }
 
