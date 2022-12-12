@@ -73,7 +73,7 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url("index.php/Catalog/brownies"); ?>">
-                    <i class="fas fa-fw fa-sign-out-alt"></i>
+                    <i class="fas fa-fw fa-cookie"></i>
                     <span>Product</span></a>
             </li>
 
