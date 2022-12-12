@@ -117,68 +117,69 @@
 
 
 
-<!-- Edit Modal -->
-<?php foreach ($productList as $item) : ?>
-    <div class="modal fade" id="editHerolpModal<?= $item['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="editHerolpModal<?= $item['id'] ?>Label" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="editHerolpModal<?= $item['id'] ?>Label">Edit Produk</h5>
-                    <buttond type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </buttond>
-                </div>
+                    <!-- Edit Modal -->
+                    <?php foreach ($productList as $item) : ?>
+                        <div class="modal fade" id="editHerolpModal<?= $item['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="editHerolpModal<?= $item['id'] ?>Label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="editHerolpModal<?= $item['id'] ?>Label">Edit Produk</h5>
+                                        <buttond type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </buttond>
+                                    </div>
 
-                <form action="<?= base_url('Admin/editProduct/' . $item['id']); ?>" method="post" enctype="multipart/form-data">
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label for="nama_produk<?= $item['id'];?>">Nama Produk</label>
-                            <input type="text" class="form-control" value="<?= $item['nama_produk'] ?>" id="nama_produk<?= $item['id'];?>" name="nama_produk" placeholder="nama produk">
-                        </div>
-                        <div class="form-group">
-                            <label for="deskripsi<?= $item['id'];?>">deskripsi Produk</label>
-                            <input type="text" class="form-control" value="<?= $item['deskripsi'] ?>" id="deskripsi<?= $item['id'];?>" name="deskripsi" placeholder="deskripsi">
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="harga<?= $item['id'];?>">harga Produk</label>
-                            <input type="number" class="form-control" value="<?= intval($item['harga_produk']) ?>" id="harga<?= $item['id'];?>" name="harga" placeholder="Harga">
-                        </div>
-                        <!-- <div class="form-group">
-                            <label for="deskripsi<?= $item['id'];?>">deskripsi Produk</label>
-                            <input type="text" class="form-control" value="<?= $item['deskripsi'] ?>" id="deskripsi<?= $item['id'];?>" name="deskripsi<?= $item['id'];?>" placeholder="deskripsi">
+                                    <form action="<?= base_url('Admin/editProduct/' . $item['id']); ?>" method="post" enctype="multipart/form-data">
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label for="nama_produk<?= $item['id']; ?>">Nama Produk</label>
+                                                <input type="text" class="form-control" value="<?= $item['nama_produk'] ?>" id="nama_produk<?= $item['id']; ?>" name="nama_produk" placeholder="nama produk">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="deskripsi<?= $item['id']; ?>">deskripsi Produk</label>
+                                                <input type="text" class="form-control" value="<?= $item['deskripsi'] ?>" id="deskripsi<?= $item['id']; ?>" name="deskripsi" placeholder="deskripsi">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="harga<?= $item['id']; ?>">harga Produk</label>
+                                                <input type="number" class="form-control" value="<?= intval($item['harga_produk']) ?>" id="harga<?= $item['id']; ?>" name="harga" placeholder="Harga">
+                                            </div>
+                                            <!-- <div class="form-group">
+                            <label for="deskripsi<?= $item['id']; ?>">deskripsi Produk</label>
+                            <input type="text" class="form-control" value="<?= $item['deskripsi'] ?>" id="deskripsi<?= $item['id']; ?>" name="deskripsi<?= $item['id']; ?>" placeholder="deskripsi">
                         </div> -->
-                        <div class="form-group">
-                            <div class="custom-file">
-                            <label for="jenisProduct<?= $item['id'];?>">Jenis Produk</label>
-                                <select class="form-control" name="jenis_produk" id="jenisProduct<?= $item['id'];?>">
-                                    <option value="Brownies">Brownies</option>
-                                    <option value="Cookies">Cookies</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <img class="mb-2" src="<?=base_url('uploads/'. $item['file_foto']);?>" width="100px">
-                        <br>
-                        <div class="form-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="file_foto<?= $item['id'];?>" name="file_foto" value="<?= $item['file_foto'] ?>">
-                                <label class="custom-file-label" for="file_foto<?= $item['id'];?>">Choose new file photo</label>
-                            </div>
-                        </div>
+                                            <div class="form-group">
+                                                <div class="custom-file">
+                                                    <label for="jenisProduct<?= $item['id']; ?>">Jenis Produk</label>
+                                                    <select class="form-control" name="jenis_produk" id="jenisProduct<?= $item['id']; ?>">
+                                                        <option value="Brownies">Brownies</option>
+                                                        <option value="Cake">Cake</option>
+                                                        <option value="Dessert">Dessert</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <img class="mb-2" src="<?= base_url('uploads/' . $item['file_foto']); ?>" width="100px">
+                                            <br>
+                                            <div class="form-group">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="file_foto<?= $item['id']; ?>" name="file_foto" value="<?= $item['file_foto'] ?>">
+                                                    <label class="custom-file-label" for="file_foto<?= $item['id']; ?>">Choose new file photo</label>
+                                                </div>
+                                            </div>
 
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-<?php endforeach; ?>
-<!-- End Edit Modal -->
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                    <!-- End Edit Modal -->
 
 
 
