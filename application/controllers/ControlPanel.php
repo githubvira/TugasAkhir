@@ -149,7 +149,9 @@ class ControlPanel extends CI_Controller
 
   private function debugMode($fileName, $function)
   {
-    // echo "$fileName"
-    //   . "@$function";
+    echo BASEPATH . "<br>";
+    echo FCPATH . "<br>";
+    echo "$fileName"
+      . "@$function";
   }
 }

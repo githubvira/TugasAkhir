@@ -23,7 +23,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/TUGAS_AKHIR/';
+// $config['base_url'] = 'http://localhost/TUGAS_AKHIR/';
+// print_r($_SERVER);
+if ($_SERVER['REMOTE_ADDR'] == '::1') {
+    $config['base_url'] = 'http://localhost/TUGAS_AKHIR/';
+} else {
+    $config['base_url'] = 'http://halwa-cake.rf.gd/';
+}
 
 /*
 |--------------------------------------------------------------------------

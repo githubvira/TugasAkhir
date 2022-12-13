@@ -15,7 +15,7 @@
                                     <h1 class="h4 text-gray-900 mb-4">Halaman Login</h1>
                                 </div>
                                 <?= $this->session->flashdata('message'); ?>
-                                <form class="user" method="post" action="<?= base_url('index.php/auth'); ?>">
+                                <form class="user" method="post" action="<?= base_url('Auth/index'); ?>">
 
                                     <div class="form-group">
                                         <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Enter Email Address..." value="<?= set_value('email'); ?>">
