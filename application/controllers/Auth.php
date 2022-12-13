@@ -42,7 +42,7 @@ class Auth extends CI_Controller
                     ];
                     $this->session->set_userdata($data);
                     // if ($user['role_id'] == 1) {
-                        redirect('ControlPanel');
+                    redirect('ControlPanel');
                     // } else {
                     //     redirect('catalog');
                     // }
@@ -52,11 +52,6 @@ class Auth extends CI_Controller
                     redirect('auth');
                 }
             }
-            // else {
-            //     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">This email is not activated!
-            //     </div>');
-            //     redirect('auth');
-            // }
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email is not registered!
         </div>');

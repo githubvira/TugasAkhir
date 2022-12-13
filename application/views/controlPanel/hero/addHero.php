@@ -5,10 +5,6 @@
                   <h1 class="h3 mb-4 text-gray-800">Add Hero</h1>
                   <!-- CONTENT -->
 
-
-
-
-
                   <div class="container">
                     <div class="col-md-12">
                       <form class="form" method="post" action="<?= base_url('index.php/ControlPanel/addHero'); ?>" enctype="multipart/form-data">
@@ -32,34 +28,6 @@
                               <input class="form-control" type="file" id="formFile" name="gambar">
                             </div>
 
-                            <!-- <div>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" nama="status">
-                                <label class="form-check-label" for="flexCheckDefault">Disetujui</label>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" nama="status">
-                                <label class="form-check-label" for="flexCheckDefault">Belum Disetujui</label>
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" nama="status">
-                                <label class="form-check-label" for="flexCheckDefault">Ditolak</label>
-                            </div> -->
-
-
-                            <!-- <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">Input Gambar</span>
-                                </div>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="inputGroupFile01" name="gambar">
-                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                </div>
-                            </div> -->
-                            <!-- 
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text">
-                                        <input type="checkbox" aria-label="Checkbox for following text input" nama="status">
-                                    </div>
-                                </div>
-                                <input type="text" class="form-control" aria-label="Text input with checkbox">
-                            </div> -->
                             <button type="submit" class="btn btn-success center-block">Simpan</button>
                           </div>
                         </div>

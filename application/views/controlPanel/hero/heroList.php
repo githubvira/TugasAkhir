@@ -5,17 +5,11 @@
                     <h1 class="h3 mb-4 text-gray-800">Hero List</h1>
                     <!-- CONTENT -->
 
-
-
-
-
                     <!-- <?php foreach ($heroList as $key => $value) : ?>
                         <div class=''>
                             <?php print_r($value) ?>
                         </div>
                     <?php endforeach; ?> -->
-
-
 
                     <?=
                     $this->session->flashdata('message');
@@ -68,12 +62,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
 
                     <!-- END OF CONTENT -->
                 </div>

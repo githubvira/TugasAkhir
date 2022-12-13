@@ -15,14 +15,9 @@
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url('assets/'); ?>lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="<?php echo base_url('assets/'); ?>css/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <link href="<?php echo base_url('assets/'); ?>img/favicon.ico" rel="icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="<?php echo base_url('/vendor/sbadmin2/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="<?php echo base_url('/vendor/sbadmin2/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="<?php echo base_url('assets/'); ?>img/favicon.ico" rel="icon">
     <style>
         .dropdown-item {
             color: black !important;
@@ -89,12 +84,12 @@
 
                                 <div class="droppdown ml-4">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-primary">Filter</button>
+                                        <button type="button" class="btn btn-primary">Rentang Harga</button>
                                         <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                                             <!-- <span class="visually-hidden">Toggle Dropdown</span> -->
                                         </button>
                                         <div class="dropdown-menu">
-                                            <span class="dropdown-item">Range harga :</span>
+                                            <!-- <span class="dropdown-item">Range harga :</span> -->
                                             <form method="GET" action="<?= base_url('Catalog/brownies'); ?>">
                                                 <div class="dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
                                                     <input type="radio" class="form-check-input" name="filterharga" id="harga0" value="0">
@@ -116,7 +111,7 @@
                                                     <input type="radio" class="form-check-input" name="filterharga" id="harga4" value="4">
                                                     <label class="form-check-label" for="harga4">Rp. 151.000 - Rp. 200.000</label>
                                                 </div>
-                                                <button type="submit" class="btn btn-primary">Terapkan</button>
+                                                <button type="submit" class="btn btn-secondary btn-lg btn-block">Terapkan</button>
                                             </form>
 
                                         </div>
@@ -124,7 +119,7 @@
                                 </div>
 
                             </ul>
-                            <i class="bi bi-list mobile-nav-toggle"></i>
+                            <i class=" bi bi-list mobile-nav-toggle"></i>
                         </nav><!-- .navbar -->
                     </div>
                 </header><!-- End Header -->
@@ -177,7 +172,6 @@
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
                                                 <div class="suscribe-text text-center">
                                                     <h3>Welcome to Halwa</h3>
-                                                    <!-- <a class="sus-btn" href="#">Get A quote</a> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -333,8 +327,6 @@
                     <script src="<?php echo base_url('/assets/tugas/'); ?>assets/js/main.js"></script>
                     <script src="<?php echo base_url('/assets'); ?>lib/easing/easing.min.js"></script>
                     <script src="<?php echo base_url('/assets'); ?>lib/owlcarousel/owl.carousel.min.js"></script>
-                    <!-- <script src="<?php echo base_url('assets/'); ?>mail/jqBootstrapValidation.min.js"></script>
-    <script src="<?php echo base_url('assets/'); ?>mail/contact.js"></script> -->
                     <script src="<?php echo base_url('assets/'); ?>js/main.js"></script>
                     <script src="<?php echo base_url('/vendor/sbadmin2/'); ?>vendor/jquery/jquery.min.js"></script>
                     <script src="<?php echo base_url('/vendor/sbadmin2/'); ?>bootstrap/js/bootstrap.bundle.min.js"></script>

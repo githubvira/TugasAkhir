@@ -7,19 +7,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
                     <!-- END OF CONTENT -->
                 </div>
                 <!-- /.container-fluid -->

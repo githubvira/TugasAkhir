@@ -144,10 +144,7 @@
                                                 <label for="harga<?= $item['id']; ?>">harga Produk</label>
                                                 <input type="number" class="form-control" value="<?= intval($item['harga_produk']) ?>" id="harga<?= $item['id']; ?>" name="harga" placeholder="Harga">
                                             </div>
-                                            <!-- <div class="form-group">
-                            <label for="deskripsi<?= $item['id']; ?>">deskripsi Produk</label>
-                            <input type="text" class="form-control" value="<?= $item['deskripsi'] ?>" id="deskripsi<?= $item['id']; ?>" name="deskripsi<?= $item['id']; ?>" placeholder="deskripsi">
-                        </div> -->
+
                                             <div class="form-group">
                                                 <div class="custom-file">
                                                     <label for="jenisProduct<?= $item['id']; ?>">Jenis Produk</label>
@@ -180,15 +177,6 @@
                         </div>
                     <?php endforeach; ?>
                     <!-- End Edit Modal -->
-
-
-
-
-
-
-
-
-
 
                     <!-- END OF CONTENT -->
                 </div>

@@ -12,8 +12,6 @@
                         </div>
                     <?php endforeach; ?> -->
 
-
-
                     <!-- <?=
                             $this->session->flashdata('message');
                             ?> -->
@@ -74,12 +72,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
 
                     <!-- END OF CONTENT -->
                 </div>
