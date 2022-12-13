@@ -13,7 +13,6 @@ class Catalog extends CI_Controller
 
     public function index()
     {
-        echo __FILE__;
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         $this->cekLogin();
         $this->load->view('catalog/hbd', $data);

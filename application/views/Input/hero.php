@@ -36,7 +36,7 @@
   <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url("index.php/Home/index"); ?>">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url("Home/index"); ?>">
       <!-- <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html"> -->
       <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-laugh-wink"></i>
@@ -57,7 +57,7 @@
 
     <!-- <div class="container">
       <div class="col-md-12">
-        <form class="form" method="post" action="<?= base_url('index.php/Admin/simpan'); ?>"
+        <form class="form" method="post" action="<?= base_url('Admin/simpan'); ?>"
           enctype="multipart/form-data">
           <!-- <center><img src="SITAMU 2.png" width="250px;"></center> -->
     <div class="panel panel-dark">

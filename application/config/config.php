@@ -28,7 +28,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 if ($_SERVER['REMOTE_ADDR'] == '::1') {
     $config['base_url'] = 'http://localhost/TUGAS_AKHIR/';
 } else {
-    $config['base_url'] = 'http://halwa-cake.rf.gd/';
+    $config['base_url'] = 'http://halwa-cake.rf.gd/TUGAS_AKHIR/';
 }
 
 /*

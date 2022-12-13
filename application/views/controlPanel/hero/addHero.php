@@ -7,7 +7,7 @@
 
                   <div class="container">
                     <div class="col-md-12">
-                      <form class="form" method="post" action="<?= base_url('index.php/ControlPanel/addHero'); ?>" enctype="multipart/form-data">
+                      <form class="form" method="post" action="<?= base_url('ControlPanel/addHero'); ?>" enctype="multipart/form-data">
                         <!-- <center><img src="SITAMU 2.png" width="250px;"></center> -->
                         <div class="panel panel-dark">
                           <div class="panel-heading text-center" style="background: #808080; color:#ffffff">

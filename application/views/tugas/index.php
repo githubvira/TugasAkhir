@@ -23,21 +23,21 @@
         <div class="container d-flex justify-content-between">
 
             <div class="logo">
-                <h1><a href="<?php echo base_url("index.php/Home/index"); ?>"><span>H</span>alwa</a></h1>
+                <h1><a href="<?php echo base_url("Home/index"); ?>"><span>H</span>alwa</a></h1>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
 
                     <!-- <button class="btn btn-info" onclick="#"><i class="glyphicon glyphicon-plus"></i> Edit Hero</button> -->
-                    <li><a class="nav-link scrollto active" href="<?php echo base_url("index.php/Home/index"); ?>">Home</a></li>
+                    <li><a class="nav-link scrollto active" href="<?php echo base_url("Home/index"); ?>">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto" href="#portfolio">Portofolio</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li><a href="<?php echo base_url("index.php/Catalog/brownies"); ?>"><span>Product</span> </a></li>
-                    <li><a class="nav-link scrollto" href="<?php echo base_url("index.php/auth/index"); ?>">Sign In</a></li>
-                    <li><a class="nav-link scrollto" href="<?php echo base_url("index.php/auth/registration"); ?>">Sign up</a></li>
+                    <li><a href="<?php echo base_url("Catalog/brownies"); ?>"><span>Product</span> </a></li>
+                    <li><a class="nav-link scrollto" href="<?php echo base_url("Auth/index"); ?>">Sign In</a></li>
+                    <li><a class="nav-link scrollto" href="<?php echo base_url("Auth/registration"); ?>">Sign up</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

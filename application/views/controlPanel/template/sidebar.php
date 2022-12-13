@@ -2,7 +2,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url("index.php/Home/index"); ?>">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url("Home/index"); ?>">
                 <!-- <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html"> -->
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
@@ -72,7 +72,7 @@
             </li>
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url("index.php/Catalog/brownies"); ?>">
+                <a class="nav-link" href="<?php echo base_url("Catalog/brownies"); ?>">
                     <i class="fas fa-fw fa-cookie"></i>
                     <span>Product</span></a>
             </li>
@@ -84,7 +84,7 @@
             </div>
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('index.php/auth/logout'); ?>">
+                <a class="nav-link" href="<?= base_url('Auth/logout'); ?>">
                     <i class="fas fa-fw fa-sign-out-alt"></i>
                     <span>Logout</span></a>
             </li>

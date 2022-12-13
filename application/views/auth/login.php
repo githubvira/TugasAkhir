@@ -34,7 +34,7 @@
                                     <a class="small" href="forgot-password.html">Forgot Password?</a>
                                 </div>
                                 <div class="text-center">
-                                    <a class="small" href="<?php echo base_url("index.php/auth/registration"); ?>">Create an Account!</a>
+                                    <a class="small" href="<?php echo base_url("Auth/registration"); ?>">Create an Account!</a>
                                 </div>
                             </div>
                         </div>
