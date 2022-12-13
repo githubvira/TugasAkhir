@@ -13,8 +13,12 @@
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="<?php echo base_url('/assets/tugas/'); ?>assets/css/style.css" rel="stylesheet">
-    <link href="<?php echo base_url('assets/'); ?>lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="<?php echo base_url('assets/'); ?>css/style.css" rel="stylesheet">
+
+
+    <link href="<?php echo base_url('assets/'); ?>/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <link href="<?php echo base_url('assets/'); ?>/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url('/vendor/sbadmin2/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="<?php echo base_url('/vendor/sbadmin2/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
     <link href="<?php echo base_url('assets/'); ?>img/favicon.ico" rel="icon">
@@ -92,26 +96,35 @@
                                             <!-- <span class="dropdown-item">Range harga :</span> -->
                                             <form method="GET" action="<?= base_url('Catalog/brownies'); ?>">
                                                 <div class="dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
-                                                    <input type="radio" class="form-check-input" name="filterharga" id="harga0" value="0">
+                                                    <input type="radio" class="form-check-input fPrice" name="filterharga" id="harga0" value="0">
                                                     <label class="form-check-label" for="harga0">Semua Harga</label>
                                                 </div>
                                                 <div class="dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
-                                                    <input type="radio" class="form-check-input" name="filterharga" id="harga1" value="1">
+                                                    <input type="radio" class="form-check-input fPrice" name="filterharga" id="harga1" value="1">
                                                     <label class="form-check-label" for="harga1">Rp. 0 - Rp. 50.000</label>
                                                 </div>
                                                 <div class="dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
-                                                    <input type="radio" class="form-check-input" name="filterharga" id="harga2" value="2">
+                                                    <input type="radio" class="form-check-input fPrice" name="filterharga" id="harga2" value="2">
                                                     <label class="form-check-label" for="harga2">Rp. 51.000 - Rp. 100.000</label>
                                                 </div>
                                                 <div class=" dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
-                                                    <input type="radio" class="form-check-input" name="filterharga" id="harga3" value="3">
+                                                    <input type="radio" class="form-check-input fPrice" name="filterharga" id="harga3" value="3">
                                                     <label class="form-check-label" for="harga3">Rp. 101.000 - Rp. 150.000</label>
                                                 </div>
                                                 <div class=" dropdown-item form-check d-flex align-items-center justify-content-between mb-3">
-                                                    <input type="radio" class="form-check-input" name="filterharga" id="harga4" value="4">
+                                                    <input type="radio" class="form-check-input fPrice" name="filterharga" id="harga4" value="4">
                                                     <label class="form-check-label" for="harga4">Rp. 151.000 - Rp. 200.000</label>
                                                 </div>
                                                 <button type="submit" class="btn btn-secondary btn-lg btn-block">Terapkan</button>
+                                                <script>
+                                                    let x = document.getElementsByClassName("fPrice");
+                                                    for (const i of x) {
+                                                        i.addEventListener('click', function() {
+                                                            window.location.href = "<?= base_url('Catalog/brownies?filterharga=') ?>" + i.value;
+                                                        })
+                                                    }
+                                                </script>
+
                                             </form>
 
                                         </div>
@@ -315,7 +328,7 @@
                     </footer>
                     <!-- End  Footer -->
 
-                    <div id="preloader"></div>
+                    <!-- <div id="preloader"></div> -->
                     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
                     <!-- Vendor JS Files -->
@@ -325,12 +338,13 @@
                     <script src="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/swiper/swiper-bundle.min.js"></script>
                     <script src="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/php-email-form/validate.js"></script>
                     <script src="<?php echo base_url('/assets/tugas/'); ?>assets/js/main.js"></script>
-                    <script src="<?php echo base_url('/assets'); ?>lib/easing/easing.min.js"></script>
-                    <script src="<?php echo base_url('/assets'); ?>lib/owlcarousel/owl.carousel.min.js"></script>
+                    <script src="<?php echo base_url('/assets'); ?>/lib/easing/easing.min.js"></script>
+                    <script src="<?php echo base_url('/assets'); ?>/lib/owlcarousel/owl.carousel.min.js"></script>
                     <script src="<?php echo base_url('assets/'); ?>js/main.js"></script>
                     <script src="<?php echo base_url('/vendor/sbadmin2/'); ?>vendor/jquery/jquery.min.js"></script>
-                    <script src="<?php echo base_url('/vendor/sbadmin2/'); ?>bootstrap/js/bootstrap.bundle.min.js"></script>
-                    <script src="<?php echo base_url('/vendor/sbadmin2/'); ?>vendor/jquery-easing/jquery.easing.min.js"></script>
+                    <!-- <script src="<?php echo base_url('/vendor/sbadmin2/'); ?>bootstrap/js/bootstrap.bundle.min.js"></script> -->
+                    <script src="<?php echo base_url('/vendor/sbadmin2/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <script src="<?php echo base_url('/vendor/sbadmin2/'); ?>/vendor/jquery-easing/jquery.easing.min.js"></script>
                     <script src="<?php echo base_url('/vendor/sbadmin2/'); ?>js/sb-admin-2.min.js"></script>
 
 
