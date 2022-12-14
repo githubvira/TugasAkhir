@@ -46,8 +46,8 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <header id="header" class="fixed-top d-flex align-items-center">
-                    <div class="container d-flex justify-content-between">
+                <header id="header" class="fixed-top d-flex p-2 align-items-center">
+                    <div class="container d-flex p-2 justify-content-between">
 
                         <div class="logo">
                             <h1><a href="<?php echo base_url("Home/index"); ?>"><span>H</span>alwa</a></h1>
@@ -58,6 +58,7 @@
                                 <li><a class="nav-link scrollto active" href="<?php echo base_url("Home/index"); ?>">Home</a></li>
                                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                                 <li><a href="<?php echo base_url("Catalog/brownies"); ?>"><span>Product</span> </a>
+
                                 </li>
                                 <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" method="GET" action="<?= base_url('Catalog/brownies'); ?>">
                                     <div class="input-group">
@@ -115,7 +116,7 @@
                                                     <input type="radio" class="form-check-input fPrice" name="filterharga" id="harga4" value="4">
                                                     <label class="form-check-label" for="harga4">Rp. 151.000 - Rp. 200.000</label>
                                                 </div>
-                                                <button type="submit" class="btn btn-secondary btn-lg btn-block">Terapkan</button>
+                                                <!-- <button type="submit" class="btn btn-secondary btn-lg btn-block">Terapkan</button> -->
                                                 <script>
                                                     let x = document.getElementsByClassName("fPrice");
                                                     for (const i of x) {
@@ -130,6 +131,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                <li><a href="<?php echo base_url("ControlPanel"); ?>"><span>Menu Login</span> </a>
+
 
                             </ul>
                             <i class=" bi bi-list mobile-nav-toggle"></i>
@@ -330,7 +333,7 @@
 
                     <!-- <div id="preloader"></div> -->
                     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-                    
+
                     <!-- <script src="<?= SBADMIN; ?>/vendor/jquery/jquery.min.js"></script> -->
                     <!-- Vendor JS Files -->
                     <script src="<?php echo base_url('/assets/tugas/'); ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
